@@ -9,7 +9,7 @@ const app = express();
 app.server = http.createServer(app);
 
 app.use(bodyParser.json({
-    limit:10
+    limit:'100kb'
 }));
 
 app.use('/v1', routes);
